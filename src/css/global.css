@@ -1,0 +1,96 @@
+@import './variables.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+h3 { font-size: clamp(1.5rem, 3vw, 2.25rem); }
+h4 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+
+p {
+  margin-bottom: var(--space-4);
+  color: var(--color-text-muted);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.section {
+  padding: var(--space-24) 0;
+}
+
+.section-bg-white {
+  background-color: var(--color-surface);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Utility for text clipping (gradients) */
+.text-gradient {
+  background-image: linear-gradient(to right, var(--color-primary), var(--color-primary-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

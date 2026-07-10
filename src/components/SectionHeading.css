@@ -1,0 +1,55 @@
+.section-heading {
+  margin-bottom: var(--space-12);
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.section-subtitle {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.section-title {
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+}
+
+.section-divider {
+  height: 3px;
+  width: 60px;
+  background-color: var(--color-accent);
+  margin: 0 auto;
+}
+
+.align-left .section-divider {
+  margin: 0;
+}
+
+.align-right .section-divider {
+  margin: 0 0 0 auto;
+}
+
+/* Light Mode for dark backgrounds */
+.light-mode .section-title {
+  color: var(--color-surface);
+}
+
+.light-mode .section-subtitle {
+  color: var(--color-accent); /* Keep gold for contrast */
+}
