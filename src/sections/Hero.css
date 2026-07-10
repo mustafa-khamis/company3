@@ -27,11 +27,18 @@
   font-family: var(--font-heading);
   font-size: 25vw;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.13);
   z-index: 0;
   pointer-events: none;
   user-select: none;
   white-space: nowrap;
+}
+@media (max-width:700px) {
+  .hero-bg-text{
+    top: 20%;
+    font-size: 23vw;
+  }
+  
 }
 
 .hero-container {

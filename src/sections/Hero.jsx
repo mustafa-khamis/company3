@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       {/* Background with low opacity text */}
-      <div className="hero-bg-text">SECURITY</div>
+      <div className="hero-bg-text">GASANA</div>
       
       <div className="hero-overlay"></div>
 
